@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design cmos_nand -cell nand -type schematic -newwindow
+window move -left 130 -top 130 -width 942 -height 391 -undock -max 
+window fit -x0 -3186 -y0 -2594 -x1 5758 -y1 1766 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8

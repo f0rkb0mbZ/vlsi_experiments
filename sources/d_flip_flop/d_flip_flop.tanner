@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design d_flip_flop -cell d_f_f -type schematic -newwindow
+window move -left 130 -top 130 -width 942 -height 391 -undock -max 
+window fit -x0 -8467 -y0 -1010 -x1 -1155 -y1 2025 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8

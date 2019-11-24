@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design xor -cell xor_gate -type schematic -newwindow
+window move -left 156 -top 156 -width 136 -height 391 -undock -max 
+window fit -x0 -5712 -y0 -2123 -x1 1961 -y1 1618 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8

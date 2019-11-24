@@ -1,0 +1,1850 @@
+(edif d_flip_flop
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2019 11 24 08 31 00)
+			(author "Snehangshu")
+			(program "Tanner S-Edit"
+				(version "16.01 build 7259")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+	(external Misc
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+		(cell Gnd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Gnd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "Global ground")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vdd
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port Vdd
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "Voltage source")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external Devices
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+		(cell PMOS
+			(cellType GENERIC)
+			(view PMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 18 41 55")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view PMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 18 41 55")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell NMOS
+			(cellType GENERIC)
+			(view NMOS4
+				(viewType SCHEMATIC)
+				(interface
+					(port B)
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 18 41 55")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view NMOS3
+				(viewType SCHEMATIC)
+				(interface
+					(port D)
+					(port G
+						(direction INPUT)
+					)
+					(port S)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 18 41 55")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external SPICE_Elements
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+		(cell VoltageSource
+			(cellType GENERIC)
+			(view DC
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+						(property Info
+							(string "AC voltage source")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view PWL
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 16 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view PWLFile
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 16 31")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view Pulse
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 15 47 37")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view Bit
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 09 57")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view Sinusoidal
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 19 58")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view Exponential
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 15 47 37")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view FrequencyModulated
+				(viewType SCHEMATIC)
+				(interface
+					(port Neg)
+					(port Pos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 19 58")
+						)
+						(property Author
+							(string "S-Edit")
+						)
+						(property Organization
+							(string "Tanner Research")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external SPICE_Commands
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+		(cell PrintVoltage
+			(cellType GENERIC)
+			(view Voltage
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view Differential
+				(viewType SCHEMATIC)
+				(interface
+					(port VprintNeg)
+					(port VprintPos)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC_Magnitude
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC_DB_Magnitude
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC_Phase
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC_Real
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view AC_Imaginary
+				(viewType SCHEMATIC)
+				(interface
+					(port Vprint)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+			(view
+				(rename &4BitBus "4BitBus")
+				(viewType SCHEMATIC)
+				(interface
+					(port
+						(array
+							(rename Vprint_LESS_0_COLON_3_GREATER_ "Vprint<0:3>")
+						4
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2005 06 06 07 38 12")
+						)
+						(property Author
+							(string "Application Engineering Group")
+						)
+						(property Organization
+							(string "Tanner EDA - Tanner Research")
+						)
+						(property Info
+							(string "AMIS C5N 0.5u LinCMOS Library")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+	)
+	(external LogicGates
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+		(cell INV
+			(cellType GENERIC)
+			(view Main
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port Out
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 07 24 01 51 34")
+						)
+						(property Author
+							(string "Consulting & Engineering Services")
+						)
+						(property Organization
+							(string "Tanner Research, Pasadena")
+						)
+						(property Info
+							(string "Bargraph Shift Register Example")
+						)
+						(property RevisionCount
+							(string "")
+						)
+					)
+					(symbol)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property Info
+						(string "Inverter")
+					)
+					(property RevisionCount
+						(string "39")
+					)
+				)
+				(status
+					(written
+						(timeStamp 2007 06 13 21 17 11)
+						(author "Tanner EDA Library Development Team")
+						(dataOrigin "Tanner EDA - Tanner Research, Inc.")
+					)
+				)
+			)
+		)
+	)
+	(external IO_Pads
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+	)
+	(library d_flip_flop
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell d_f_f
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port In_CLK
+						(direction INPUT)
+					)
+					(port In_D
+						(direction INPUT)
+					)
+					(port Out_Q
+						(direction OUTPUT)
+					)
+					(port
+						(rename Out_Q_SINGLE_QUOTE_ "Out_Q'")
+						(direction OUTPUT)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "1")
+					)
+				)
+				(status
+					(written
+						(timeStamp 2019 11 24 08 31 00)
+					)
+				)
+				(property
+					(rename Spice_PERIOD_General_PERIOD_LibraryFiles "Spice.General.LibraryFiles")
+					(string "../../Tanner EDA/Tanner_Libraries/Libraries/Models/Generic_025.lib TT")
+				)
+				(property
+					(rename Spice_PERIOD_Transient_PERIOD_Enable "Spice.Transient.Enable")
+					(boolean (true))
+				)
+				(property
+					(rename Spice_PERIOD_Transient_PERIOD_PrintStart "Spice.Transient.PrintStart")
+					(string "0")
+				)
+				(property
+					(rename Spice_PERIOD_Transient_PERIOD_Step "Spice.Transient.Step")
+					(string "0.01n")
+				)
+				(property
+					(rename Spice_PERIOD_Transient_PERIOD_Stop "Spice.Transient.Stop")
+					(string "100n")
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name In_D
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -2100 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -2100 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -2104 -4)
+									(pt -2096 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_Q
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 2400 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 2400 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 2396 -4)
+									(pt 2404 4)
+								)
+							)
+						)
+						(portImplementation
+							(name Out_Q_SINGLE_QUOTE_
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 500 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 500 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 496 -4)
+									(pt 504 4)
+								)
+							)
+						)
+						(portImplementation
+							(name In_D
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -4500 -200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -4500 -200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -4504 -204)
+									(pt -4496 -196)
+								)
+							)
+						)
+						(portImplementation
+							(name In_CLK
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt -1500 -200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -1500 -200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -1504 -204)
+									(pt -1496 -196)
+								)
+							)
+						)
+						(portImplementation
+							(name In_CLK
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERRIGHT)
+									(orientation R270)
+									(origin
+										(pt 500 -1200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 500 -1200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 496 -1204)
+									(pt 504 -1196)
+								)
+							)
+						)
+						(portImplementation
+							(name In_CLK
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt -3500 -200)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -3500 -200)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -3504 -204)
+									(pt -3496 -196)
+								)
+							)
+						)
+						(portImplementation
+							(name In_CLK
+								(display
+									(figureGroupOverride pin
+										(textHeight 111)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -3500 -1900)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -3500 -1900)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -3504 -1904)
+									(pt -3496 -1896)
+								)
+							)
+						)
+						(instance Gnd_1
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 0 -800)
+								)
+							)
+						)
+						(instance Gnd_2
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 1600 -800)
+								)
+							)
+						)
+						(instance Gnd_3
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt -5500 -800)
+								)
+							)
+						)
+						(instance Gnd_4
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt -4500 -800)
+								)
+							)
+						)
+						(instance Gnd_5
+							(viewRef Main
+								(cellRef Gnd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt -3500 -800)
+								)
+							)
+						)
+						(instance INV_1
+							(viewRef Main
+								(cellRef INV
+									(libraryRef LogicGates)
+								)
+							)
+							(transform
+								(origin
+									(pt -3500 -1900)
+								)
+							)
+						)
+						(instance NMOS_1
+							(viewRef NMOS4
+								(cellRef NMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(orientation R270)
+								(origin
+									(pt -1500 -200)
+								)
+							)
+						)
+						(instance NMOS_2
+							(viewRef NMOS4
+								(cellRef NMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(origin
+									(pt -400 -500)
+								)
+							)
+						)
+						(instance NMOS_3
+							(viewRef NMOS4
+								(cellRef NMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(origin
+									(pt 1200 -500)
+								)
+							)
+						)
+						(instance NMOS_4
+							(viewRef NMOS4
+								(cellRef NMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(orientation R270)
+								(origin
+									(pt 500 -2000)
+								)
+							)
+						)
+						(instance PMOS_1
+							(viewRef PMOS4
+								(cellRef PMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(orientation R270)
+								(origin
+									(pt -1500 1000)
+								)
+							)
+						)
+						(instance PMOS_2
+							(viewRef PMOS4
+								(cellRef PMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(origin
+									(pt -400 500)
+								)
+							)
+						)
+						(instance PMOS_3
+							(viewRef PMOS4
+								(cellRef PMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(origin
+									(pt 1200 500)
+								)
+							)
+						)
+						(instance PMOS_4
+							(viewRef PMOS4
+								(cellRef PMOS
+									(libraryRef Devices)
+								)
+							)
+							(transform
+								(orientation R270)
+								(origin
+									(pt 500 -1200)
+								)
+							)
+						)
+						(instance PrintVoltage_1
+							(viewRef Voltage
+								(cellRef PrintVoltage
+									(libraryRef SPICE_Commands)
+								)
+							)
+							(transform
+								(orientation R90)
+								(origin
+									(pt -4500 -200)
+								)
+							)
+						)
+						(instance PrintVoltage_2
+							(viewRef Voltage
+								(cellRef PrintVoltage
+									(libraryRef SPICE_Commands)
+								)
+							)
+							(transform
+								(orientation R90)
+								(origin
+									(pt -3500 -200)
+								)
+							)
+						)
+						(instance PrintVoltage_3
+							(viewRef Voltage
+								(cellRef PrintVoltage
+									(libraryRef SPICE_Commands)
+								)
+							)
+							(transform
+								(orientation R90)
+								(origin
+									(pt 2400 0)
+								)
+							)
+						)
+						(instance Vdd_1
+							(viewRef Main
+								(cellRef Vdd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 0 800)
+								)
+							)
+						)
+						(instance Vdd_2
+							(viewRef Main
+								(cellRef Vdd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt 1600 800)
+								)
+							)
+						)
+						(instance Vdd_3
+							(viewRef Main
+								(cellRef Vdd
+									(libraryRef Misc)
+								)
+							)
+							(transform
+								(origin
+									(pt -5500 -200)
+								)
+							)
+						)
+						(instance VoltageSource_1
+							(viewRef DC
+								(cellRef VoltageSource
+									(libraryRef SPICE_Elements)
+								)
+							)
+							(transform
+								(origin
+									(pt -5500 -200)
+								)
+							)
+						)
+						(instance VoltageSource_2
+							(viewRef Bit
+								(cellRef VoltageSource
+									(libraryRef SPICE_Elements)
+								)
+							)
+							(transform
+								(origin
+									(pt -4500 -200)
+								)
+							)
+							(property pattern
+								(string "001")
+							)
+						)
+						(instance VoltageSource_3
+							(viewRef Bit
+								(cellRef VoltageSource
+									(libraryRef SPICE_Elements)
+								)
+							)
+							(transform
+								(origin
+									(pt -3500 -200)
+								)
+							)
+							(property pattern
+								(string "011")
+							)
+						)
+						(net Gnd
+							(joined
+								(portRef Gnd
+									(instanceRef Gnd_1)
+								)
+								(portRef Gnd
+									(instanceRef Gnd_2)
+								)
+								(portRef Gnd
+									(instanceRef Gnd_3)
+								)
+								(portRef Gnd
+									(instanceRef Gnd_4)
+								)
+								(portRef Gnd
+									(instanceRef Gnd_5)
+								)
+								(portRef Neg
+									(instanceRef VoltageSource_1)
+								)
+								(portRef Neg
+									(instanceRef VoltageSource_2)
+								)
+								(portRef Neg
+									(instanceRef VoltageSource_3)
+								)
+								(portRef S
+									(instanceRef NMOS_2)
+								)
+								(portRef S
+									(instanceRef NMOS_3)
+								)
+							)
+						)
+						(net In_CLK
+							(joined
+								(portRef In_CLK)
+								(portRef A
+									(instanceRef INV_1)
+								)
+								(portRef G
+									(instanceRef NMOS_1)
+								)
+								(portRef G
+									(instanceRef PMOS_4)
+								)
+								(portRef Pos
+									(instanceRef VoltageSource_3)
+								)
+								(portRef Vprint
+									(instanceRef PrintVoltage_2)
+								)
+							)
+						)
+						(net In_D
+							(joined
+								(portRef In_D)
+								(portRef D
+									(instanceRef PMOS_1)
+								)
+								(portRef Pos
+									(instanceRef VoltageSource_2)
+								)
+								(portRef S
+									(instanceRef NMOS_1)
+								)
+								(portRef Vprint
+									(instanceRef PrintVoltage_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1800 -600)
+										(pt -1800 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1800 0)
+										(pt -2100 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1800 0)
+										(pt -1800 600)
+									)
+								)
+							)
+						)
+						(net N_1
+							(joined
+								(portRef B
+									(instanceRef NMOS_1)
+								)
+							)
+						)
+						(net N_10
+							(joined
+								(portRef D
+									(instanceRef NMOS_1)
+								)
+								(portRef D
+									(instanceRef PMOS_4)
+								)
+								(portRef G
+									(instanceRef NMOS_2)
+								)
+								(portRef G
+									(instanceRef PMOS_2)
+								)
+								(portRef S
+									(instanceRef NMOS_4)
+								)
+								(portRef S
+									(instanceRef PMOS_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1200 600)
+										(pt -1200 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1200 0)
+										(pt -900 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1200 0)
+										(pt -1200 -600)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -600 0)
+										(pt -600 500)
+										(pt -400 500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -600 0)
+										(pt -600 -500)
+										(pt -400 -500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 200 -1600)
+										(pt 200 -2000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -900 0)
+										(pt -600 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 200 -2000)
+										(pt 200 -2400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 200 -2000)
+										(pt -900 -2000)
+										(pt -900 0)
+									)
+								)
+							)
+						)
+						(net N_2
+							(joined
+								(portRef B
+									(instanceRef NMOS_2)
+								)
+							)
+						)
+						(net N_3
+							(joined
+								(portRef B
+									(instanceRef NMOS_3)
+								)
+							)
+						)
+						(net N_4
+							(joined
+								(portRef B
+									(instanceRef NMOS_4)
+								)
+							)
+						)
+						(net N_5
+							(joined
+								(portRef B
+									(instanceRef PMOS_1)
+								)
+							)
+						)
+						(net N_6
+							(joined
+								(portRef G
+									(instanceRef NMOS_4)
+								)
+								(portRef G
+									(instanceRef PMOS_1)
+								)
+								(portRef Out
+									(instanceRef INV_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -1500 1000)
+										(pt -1500 1100)
+										(pt -2300 1100)
+										(pt -2300 -1900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -2300 -1900)
+										(pt -2300 -2600)
+										(pt 300 -2600)
+										(pt 300 -2000)
+										(pt 500 -2000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -2300 -1900)
+										(pt -2600 -1900)
+									)
+								)
+							)
+						)
+						(net N_7
+							(joined
+								(portRef B
+									(instanceRef PMOS_2)
+								)
+							)
+						)
+						(net N_8
+							(joined
+								(portRef B
+									(instanceRef PMOS_3)
+								)
+							)
+						)
+						(net N_9
+							(joined
+								(portRef B
+									(instanceRef PMOS_4)
+								)
+							)
+						)
+						(net Out_Q
+							(joined
+								(portRef Out_Q)
+								(portRef D
+									(instanceRef NMOS_3)
+								)
+								(portRef D
+									(instanceRef NMOS_4)
+								)
+								(portRef D
+									(instanceRef PMOS_3)
+								)
+								(portRef S
+									(instanceRef PMOS_4)
+								)
+								(portRef Vprint
+									(instanceRef PrintVoltage_3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 800 -1600)
+										(pt 800 -2000)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1600 200)
+										(pt 1600 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1600 0)
+										(pt 1600 -200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 800 -2000)
+										(pt 800 -2400)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 800 -2000)
+										(pt 2400 -2000)
+										(pt 2400 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 2400 0)
+										(pt 1600 0)
+									)
+								)
+							)
+						)
+						(net
+							(rename Out_Q_SINGLE_QUOTE_ "Out_Q'")
+							(joined
+								(portRef Out_Q_SINGLE_QUOTE_)
+								(portRef D
+									(instanceRef NMOS_2)
+								)
+								(portRef D
+									(instanceRef PMOS_2)
+								)
+								(portRef G
+									(instanceRef NMOS_3)
+								)
+								(portRef G
+									(instanceRef PMOS_3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 0 200)
+										(pt 0 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 0 0)
+										(pt 500 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 0 0)
+										(pt 0 -200)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1200 -500)
+										(pt 1000 -500)
+										(pt 1000 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1000 0)
+										(pt 1000 500)
+										(pt 1200 500)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 500 0)
+										(pt 1000 0)
+									)
+								)
+							)
+						)
+						(net Vdd
+							(joined
+								(portRef Pos
+									(instanceRef VoltageSource_1)
+								)
+								(portRef S
+									(instanceRef PMOS_2)
+								)
+								(portRef S
+									(instanceRef PMOS_3)
+								)
+								(portRef Vdd
+									(instanceRef Vdd_1)
+								)
+								(portRef Vdd
+									(instanceRef Vdd_2)
+								)
+								(portRef Vdd
+									(instanceRef Vdd_3)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+	)
+	(external All
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+				(scale 5000000
+					127
+					(unit DISTANCE)
+				)
+			)
+		)
+		
+	)
+)
