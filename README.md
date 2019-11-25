@@ -23,8 +23,8 @@ Implementation of some basic digital logic circuit using Tanner EDA (S-Edit, T-S
    **`Bit Pattern:`**
 
    ```
-   In_D: 0101
-   In_CLK: 0011
+   In_D: 001000
+   In_CLK: 101010
    ```
 
 4. Full Adder:
@@ -36,7 +36,4 @@ Implementation of some basic digital logic circuit using Tanner EDA (S-Edit, T-S
    In_B: 00110011
    In_C: 01010101
    ```
-
-* The D-flipflop circuit is correct, but the output is not correct for some reason.
-* If you can tell what is wrong, please raise an issue or PR.
 
